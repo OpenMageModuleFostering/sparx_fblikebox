@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+    <name>Sparx_Fblikebox</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Show Facebook Fan Page on Magento site.</summary>
+    <description>Show Facebook Fan Page on Magento site.</description>
+    <notes>Enable FBLikeBox: (yes or no) Enable the extension or not&#xD;
+Facebook Page Href: URL of Facebook page&#xD;
+Width: Width of the box shown in front-end&#xD;
+Height: Height of the box shown in front-end&#xD;
+Streams: Show the profile stream or not&#xD;
+Header: Show the header &#x201C;Find us on Facebook&#x201D; or not.&#xD;
+&#xD;
+For more info &#xD;
+https://developers.facebook.com/docs/plugins/like-box-for-pages/&#xD;
+</notes>
+    <authors><author><name>Bhoopendra Dwivedi</name><user>Sparx</user><email>bhoopendra.dwivedi@sparxtechnologies.com</email></author></authors>
+    <date>2014-04-23</date>
+    <time>05:31:50</time>
+    <contents><target name="magecommunity"><dir name="Sparx"><dir name="Fblikebox"><dir><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><file name="Implementcode.php" hash="4808dcc5729dcbf28f3cabbc3b7db9e1"/></dir></dir></dir><file name="Fblikebox.php" hash="5815f56d94e8b5588ac36eea1cb040bb"/></dir><dir name="Helper"><file name="Data.php" hash="4af1e1bd09f69fa39ac1043233bdc318"/></dir><dir name="Model"><dir name="Source"><file name="Showlight.php" hash="7b4acb9e7e3273e521b2a5fdfddd8394"/><file name="Showtrue.php" hash="e980abf1b47009316377ddf93af50b13"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="760db44f4c7a456600cec40c2fcd24f9"/></dir><dir name="etc"><file name="adminhtml.xml" hash="ae51c2ba737fece2bb66637671918704"/><file name="config.xml" hash="5ff4a893bcc009b69503aca7ca343ccb"/><file name="system.xml" hash="e64ec91b6e55c004aa1600c7fbd36440"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="fblikebox"><file name="fblikebox.phtml" hash="154831c79c022bcf9b21d9d209110e0d"/><file name="left.phtml" hash="66d39e59cbac85bca2d93cac30f68558"/><file name="right.phtml" hash="826f4cb21635406f95f578f33b070b3d"/></dir></dir><dir name="layout"><file name="fblikebox.xml" hash=""/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sparx_Fblikebox.xml" hash="775a83188fa4c291dfe39ae84141d801"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.1</min><max>6.0.0</max></php></required></dependencies>
+</package>

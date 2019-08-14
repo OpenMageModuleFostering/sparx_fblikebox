@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<sparx translate="label" module="fblikebox">
+            <label>Sparx</label>
+            <sort_order>0</sort_order>
+        </sparx>
+	  </tabs>
+	  <sections>
+		<fblikebox  translate="label" module="fblikebox">                    
+		<label>Fb Like Box</label>
+		<tab>sparx</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <implement translate="label"> 
+						<label>Implement Code</label>
+						<frontend_model>fblikebox/adminhtml_system_config_implementcode</frontend_model>
+						<sort_order>20</sort_order>
+						<show_in_default>1</show_in_default>
+						<show_in_website>1</show_in_website>
+						<show_in_store>1</show_in_store>
+					   </implement>
+				      <general translate="label"> 
+					  <label>General Configuration</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>10</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </enable>
+                          <left translate="label">
+                            <label>Display In Left</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </left>
+                          <right translate="label">
+                            <label>Display In Right</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </right>
+                          <!--fbpageurl translate="label">
+                            <label>FB Page Url</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>https://www.facebook.com/csschopper</comment>
+                          </fbpageurl-->
+                          <colorscheme translate="label">
+                            <label>Color Scheme</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/source_showlight</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>The color scheme used by the plugin. Can be "light" or "dark".</comment>
+                          </colorscheme>
+                          <force_wall translate="label">
+                            <label>Force Wall</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/source_showtrue</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>For "place" Pages (Pages that have a physical location that can be used with check-ins), this specifies whether the stream contains posts by the Page or just check-ins from friends.</comment>
+                          </force_wall>
+                          <header translate="label">
+                            <label>Header</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/source_showtrue</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Specifies whether to display the Facebook header at the top of the plugin.</comment>
+                          </header>
+                          <height translate="label">
+                            <label>Height</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>The height of the plugin in pixels. The default height varies based on number of faces to display, and whether the stream is displayed. With stream set to true and 10 photos displayed (via show_faces) the default height is 556px. With stream and show_faces both false, the default height is 63px</comment>
+                          </height>
+                          <href translate="label">
+                            <label>Href</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>The absolute URL of the Facebook Page that will be liked. This is a required setting.</comment>
+                          </href>
+                          <show_border translate="label">
+                            <label>Show Border</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/source_showtrue</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Specifies whether or not to show a border around the plugin.</comment>
+                          </show_border>
+                          <show_faces translate="label">
+                            <label>Show Faces</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/source_showtrue</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Specifies whether to display profile photos of people who like the page.</comment>
+                          </show_faces>
+                          <stream translate="label">
+                            <label>Stream</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>fblikebox/source_showtrue</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Specifies whether to display a stream of the latest posts by the Page.</comment>
+                          </stream>
+                          <width translate="label">
+                            <label>Width</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>The width of the plugin in pixels. Minimum is 292.</comment>
+                          </width>
+                          <connection translate="label">
+                            <label>Connection</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>The number of fans shown in the box</comment>
+                          </connection>
+					   </fields>
+					   </general>
+					</groups>
+		</fblikebox>
+	  </sections>
+</config>

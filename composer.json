@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Sparx_Fblikebox",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Show Facebook Fan Page on Magento site.",
+    "authors": [
+    {
+        "name": "Bhoopendra Dwivedi",
+        "email": "bhoopendra.dwivedi@sparxtechnologies.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

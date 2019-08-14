@@ -1,0 +1,52 @@
+<?php
+$_helper = $this->helper('fblikebox');
+if($_helper->isEnabled()){
+	$box_href=$_helper->getHref();
+	$box_width=$_helper->getWidth();
+	$box_height=$_helper->getHeight();	
+	$box_colorscheme=$_helper->getColorscheme();	
+	$box_header=$_helper->isShowHeader();
+	$box_force_wall=$_helper->getForceWall();	
+	$box_show_border=$_helper->isShowBorder();
+	$box_show_faces=$_helper->isShowFaces();
+	$box_stream=$_helper->isShowStream();
+	$box_content="";
+	 $box_content .='<iframe src="http://www.facebook.com/plugins/likebox.php?href='. urlencode($box_href);
+	 if($box_width)
+	 {
+	  $box_content .= '&amp;width='. $box_width;
+	 }
+	 if($box_height)
+	 {
+	  $box_content .= '&amp;height='. $box_height;
+	 }
+	 
+	 $box_content .= '&amp;connections='. $connection;
+	 
+	 if($box_header)
+	 {
+	  $box_content .= '&amp;header=true';
+	 }
+	 
+	 if($box_stream)
+	 {
+	  $box_content .= '&amp;stream=true';
+	 }
+	 $box_content .= '" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; ';
+	 
+	 if($box_width)
+	 {
+	  $box_content .= ' width:'. $box_width . 'px; ';
+	 }
+	 if($box_height)
+	 {
+	  $box_content .= ' height:'. $box_height. 'px; ';
+	 }
+	 $box_content .= '"></iframe>';
+	?> 
+	<div id='fbfanbox'>
+	<?php echo($box_content); ?> 
+	</div>
+<?php
+}
+?>

@@ -1,0 +1,14 @@
+<?php
+$_helper = $this->helper('fblikebox');
+if($_helper->isEnabled() && $_helper->isShowInLeft()){	?>	
+	<div class="block block-fblikebox">
+		<div class="block-title">
+			<strong><span><?php echo $this->__('Facebook') ?></span></strong>
+		</div>    
+        <div class="block-content">
+            <div id='fbfanbox'>
+			<?php echo $this->getFbContent(); ?> 
+			</div>
+        </div>    
+	</div>	
+<?php } ?>
