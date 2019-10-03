@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Sparx_Fblikebox",
+    "name": "openmage-module-fostering\/sparx_fblikebox",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Show Facebook Fan Page on Magento site.",
     "authors": [
